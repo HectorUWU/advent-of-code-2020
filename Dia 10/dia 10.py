@@ -2,6 +2,7 @@ cargadores = []
 archivo = open("input.txt","r")
 for line in archivo.readlines():
     cargadores.append(int(line.strip()))
+archivo.close()
 cargadores.append(max(cargadores)+3)
 cargadores = sorted(cargadores)
 diferencias = ""
